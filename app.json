@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Engaze",
+    "slug": "engaze",
+    "privacy": "public",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#fff",
+      "androidMode": "default"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#fff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.engaze.engazeapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app requires access to the camera to change the profile picture of the account",
+        "NSPhotoLibraryUsageDescription": "This app requires access to the photo library to change the profile picture of the account",
+        "NSPhotoLibraryAddUsageDescription": "This app requires access to the photo library to change the profile picture of the account",
+        "NSLocationWhenInUseUsageDescription": "This app requires access to your location to know the exact location of the delivery"
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyC4bD9dj1Pco0CKTol1gMPZNtYQEBL7kZI"
+      }
+    },
+    "android": {
+      "package": "com.engaze.engazeapp",
+      "versionCode": 2,
+      "useNextNotificationsApi": true,
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBM9G84Kov_aQ4v14KEtIbk239psMISdlk"
+        }
+      }
+    }
+  }
+}
